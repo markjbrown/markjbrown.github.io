@@ -1,0 +1,31 @@
+title: Mark Brown
+email: # add if you want a contact email shown
+description: >-
+  Engineer, evangelist, community cat-herder. Principal PM at Microsoft on Azure Cosmos DB.
+  This is my personal site — opinions are my own.
+baseurl: ""
+url: "https://markjbrown.com"
+github_username: markjbrown
+twitter_username: markjbrown
+
+theme: minima
+minima:
+  skin: dark
+  social_links:
+    github: markjbrown
+    twitter: markjbrown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+header_pages:
+  - about.md
+  - projects.md
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
