@@ -6,58 +6,72 @@ permalink: /about/
 
 <img src="/assets/img/mark-head.jpg" alt="Mark Brown" style="width:200px;border-radius:8px;float:right;margin:0 0 1rem 1.5rem;" />
 
-Hi, my name is Mark Brown. I'm an engineer, an evangelist, a community cat-herder
-and marketing guy. The contents of this blog are my own.
+I'm Mark Brown — a Principal PM Manager at Microsoft on the
+**Azure Cosmos DB** team. I've been a developer since 1992 and at Microsoft for
+most of the last 25 years across some of the platforms I'm proudest of: Bing
+Maps (back when it was Virtual Earth), IIS / ASP.NET / WebMatrix on the Web
+Platform team, the Azure App Service launch, Azure Networking, and now Cosmos
+DB. The contents of this blog are my own.
 
-I have been a professional developer since 1992. I am completely self-taught (I
-went to school to study finance and hacky-sack). I wrote my first application
-using a beta version of Microsoft Access 1.0 while working in the accounting
-department for a golf resort in Scottsdale, AZ. I wrote the application to do
-my job for me. The experience was liberating and I realized that I enjoyed it,
-so I shifted to software and began to devour every book on software engineering
-I could find. Pretty soon I was writing Enterprise Application Integration and
-Business Process Automation applications in VB, as well as Java and C/C++ on
-both the Windows and Unix platforms.
+## What I work on today
 
-By the mid-90s I had moved to So-Cal and built a variety of sites using ASP,
-JSP and PHP. Not many people remember, but back in the mid-90s Windows was the
-low-cost way to build websites — Linux did not exist and Unix servers were very
-expensive. I worked for a number of dot-com start-ups in the late 90s, pretty
-much working on stuff behind the "Purchase" button: lots of message-based
-systems which were very well suited for e-commerce and scaled very well (they
-still do). I also branched out and did systems engineering, building racks of
-servers for dot-com start-ups — sometimes in a closet with servers mounted on
-milk crates, stripped down with open cabinets and portable AC units pointed at
-them. Some were a little more elegant.
+Most of my time is spent helping developers and architects build at cloud
+scale on a distributed NoSQL database. Recent areas of focus:
 
-I joined Microsoft in early 2000 and have been lucky to work on a number of
-really interesting things over the years. I built applications on Microsoft's
-first generation mobile device platforms, Merlin (Pocket PC) and Stinger
-(Smartphone), and worked on Microsoft's first generation of Tablet PCs. One of
-my favorite jobs was working on Microsoft's online mapping platform Virtual
-Earth, now Bing Maps. Maps is pure geek goodness. After that I went to work on
-Microsoft's Web Platform Team — the team that did Silverlight, IIS, ASP.NET,
-the Web Application Gallery, Web PI and WebMatrix. As part of that role I
-worked extensively with the broader open source web community, both around
-open-sourcing ASP.NET and around our growing work with PHP, Linux and
-JavaScript.
+- **Distributed data modeling and partitioning** — how to take a relational
+  schema and reshape it so it scales horizontally without falling over.
+- **Vector search and AI apps on Cosmos DB** — building chat, retrieval, and
+  multi-agent workloads with Azure OpenAI, Semantic Kernel, and LangChain on
+  top of Cosmos.
+- **Resilience patterns** — active-active replication, Saga transactions,
+  global secondary indexing, and what it actually takes to run zero-downtime
+  workloads on AKS + Cosmos.
+- **Teaching the hard parts** — CAP, PACELC, consistency trade-offs, and the
+  things people get wrong about distributed systems. I speak about these at
+  conferences fairly regularly
+  ([Sessionize](https://sessionize.com/mark-brown)).
 
-My last role in my first tour of duty at Microsoft was on Azure, where I was
-both Community Manager for the Azure MVPs/Insiders and Product Marketing
-Manager for Web App Services and Cache.
+You can see most of this work in the open at
+[github.com/markjbrown](https://github.com/markjbrown) and across the
+[AzureCosmosDB](https://github.com/AzureCosmosDB) org.
 
-In late 2014 I left Microsoft and joined a small start-up called
-[Solliance](http://solliance.net) as a Cloud Architect, building solutions on
-Azure for customers. It was a big change after so many years at Microsoft, but
-I really love working with customers and enjoyed spending all day as an
-engineer again. I also earned recognition as an Azure MVP, which is very
-special to me.
+## How I got here
 
-I'm now back at Microsoft as a Principal Program Manager on the **Azure Cosmos
-DB** team, focused on connecting us to our customers so we can continue to
-build great products that they'll love.
+I'm completely self-taught — I went to school to study finance and hacky-sack.
+I wrote my first application in a beta of Microsoft Access 1.0 while working
+in the accounting department of a golf resort in Scottsdale, AZ, mostly so I
+could do my job for me. That experience was liberating, and I shifted to
+software the next year and devoured everything I could get on engineering. By
+the mid-90s I was writing EAI and business-process automation in VB, Java,
+and C/C++ on Windows and Unix.
 
-I don't blog often anymore, but I do once in a while when I have something
-worth sharing. When I'm not blogging you can usually find me ranting about
-something on Twitter at
+Then I moved to So-Cal and built websites in ASP, JSP, and PHP. Not many
+people remember, but in the mid-90s Windows was actually the *cheap* way to
+build websites — Linux didn't really exist yet and Unix servers were
+expensive. I worked at a string of dot-com start-ups doing the stuff behind
+the "Purchase" button: message-based systems that handled e-commerce volume
+and scaled well (they still do). I also built racks of servers myself, some
+mounted on milk crates in closets with portable AC units pointed at them,
+others a little more elegant.
+
+I joined Microsoft for the first time in early 2000. Highlights from that run
+included building apps on the first generations of Pocket PC, Smartphone, and
+Tablet PC; working on Virtual Earth (now Bing Maps); and a long stint on the
+Web Platform team behind IIS, ASP.NET, the Web Application Gallery, Web PI,
+and WebMatrix — including a lot of community work as Microsoft was opening up
+to open source. My last role on that tour was on the original Azure team, both
+as Community Manager for the Azure MVPs/Insiders and as Product Marketing
+Manager for Azure Websites and Cache.
+
+In late 2014 I left Microsoft and joined a small startup called
+[Solliance](http://solliance.net) as a Cloud Architect, building Azure
+solutions for customers. It was a big change after so many years inside, but
+I really love working with customers and being an engineer all day again. I
+also earned recognition as an Azure MVP, which is still very special to me.
+
+I came back to Microsoft in early 2016, and after a stint on Azure Networking
+I landed on Cosmos DB, where I've been since.
+
+When I'm not at work or writing the occasional post here, you can usually find
+me on Twitter / X at
 [@markjbrown](https://twitter.com/markjbrown).
