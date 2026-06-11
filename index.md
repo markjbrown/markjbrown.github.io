@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-list_title: " "
+list_title: "Recent posts"
 ---
 
 <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem;">
