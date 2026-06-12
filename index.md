@@ -12,6 +12,7 @@ list_title: "Recent posts"
     <p style="margin:0.5rem 0 0;">
       <a href="/about/">About</a> ·
       <a href="/projects/">Projects</a> ·
+      <a href="/speaking/">Speaking</a> ·
       <a href="https://github.com/markjbrown">GitHub</a> ·
       <a href="https://twitter.com/markjbrown">Twitter</a>
     </p>
