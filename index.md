@@ -16,5 +16,9 @@ list_title: "Recent posts"
       <a href="https://github.com/markjbrown">GitHub</a> ·
       <a href="https://twitter.com/markjbrown">Twitter</a>
     </p>
+    <p style="margin:0.75rem 0 0;">
+      Looking for conference talks and recordings? Visit my
+      <a href="/speaking/">speaking page</a> for upcoming and past sessions from Sessionize.
+    </p>
   </div>
 </div>
