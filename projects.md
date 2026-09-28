@@ -1,57 +1,41 @@
 ---
 layout: page
-title: Projects
+title: Portfolio
 permalink: /projects/
+eyebrow: Selected work
+heading: "Product direction. Practical proof."
+intro: "I lead, build, and contribute. These public projects show different parts of that work—from guiding open-source contributors to making complex platforms easier to use."
+description: "A curated portfolio of Mark Brown's open-source leadership, workshops, samples, and architecture contributions, with the scope of his role in each."
 ---
 
-A selection of my public GitHub repositories — loaded live from the GitHub API,
-sorted by stars. See [my full profile](https://github.com/markjbrown) for everything.
+<section class="portfolio-section" aria-labelledby="featured-projects-title">
+  <div class="section-heading">
+    <h2 id="featured-projects-title">Featured projects</h2>
+    <p class="section-aside">Shared work. Specific contributions.</p>
+  </div>
+  {% assign featured_projects = site.data.projects | where: 'featured', true %}
+  {% for project in featured_projects %}
+    {% include project.html project=project %}
+  {% endfor %}
+</section>
 
-<div id="repos" style="margin-top:1.5rem;">Loading repositories…</div>
+<section class="section-block" aria-labelledby="supporting-projects-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">More from the workbench</p>
+      <h2 id="supporting-projects-title">Architecture &amp; deployment</h2>
+    </div>
+  </div>
+  <p class="section-intro">Focused examples that make infrastructure choices and distributed-systems trade-offs easier to explore.</p>
+  <div class="supporting-projects">
+    {% assign supporting_projects = site.data.projects | where: 'featured', false %}
+    {% for project in supporting_projects %}
+      {% include project.html project=project compact=true %}
+    {% endfor %}
+  </div>
+</section>
 
-<script>
-(function () {
-  var container = document.getElementById('repos');
-  fetch('https://api.github.com/users/markjbrown/repos?per_page=100&sort=updated')
-    .then(function (r) { return r.json(); })
-    .then(function (repos) {
-      if (!Array.isArray(repos)) {
-        container.innerHTML = '<p>Could not load repositories right now.</p>';
-        return;
-      }
-      var top = repos
-        .filter(function (r) { return !r.fork && !r.archived; })
-        .sort(function (a, b) { return b.stargazers_count - a.stargazers_count; })
-        .slice(0, 24);
-
-      if (top.length === 0) {
-        container.innerHTML = '<p>No public repositories found.</p>';
-        return;
-      }
-
-      container.innerHTML = top.map(function (r) {
-        var desc = r.description ? escapeHtml(r.description) : '<em>No description.</em>';
-        var lang = r.language ? '<span style="opacity:0.7;">' + escapeHtml(r.language) + '</span>' : '';
-        return '' +
-          '<div style="border:1px solid #444;border-radius:8px;padding:1rem;margin-bottom:0.75rem;">' +
-            '<div style="display:flex;justify-content:space-between;gap:1rem;align-items:baseline;">' +
-              '<a href="' + r.html_url + '" style="font-weight:600;font-size:1.05rem;">' + escapeHtml(r.name) + '</a>' +
-              '<span style="white-space:nowrap;font-size:0.9rem;opacity:0.8;">' +
-                '★ ' + r.stargazers_count + ' &nbsp; ' + lang +
-              '</span>' +
-            '</div>' +
-            '<p style="margin:0.5rem 0 0;">' + desc + '</p>' +
-          '</div>';
-      }).join('');
-    })
-    .catch(function () {
-      container.innerHTML = '<p>Could not load repositories right now.</p>';
-    });
-
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-  }
-})();
-</script>
+<div class="portfolio-end">
+  <p>These projects include work by many people. I've described my own role rather than claiming the whole effort.</p>
+  <a class="text-link" href="https://github.com/markjbrown">More on GitHub <span aria-hidden="true">↗</span></a>
+</div>

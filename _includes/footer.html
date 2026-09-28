@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-name">Mark Brown</p>
+      <p>Product leadership, grounded in building.</p>
+      <p class="disclaimer">This is my personal site. Opinions are my own, not those of Microsoft.</p>
+    </div>
+    <nav aria-label="Elsewhere and subscriptions">
+      <ul class="footer-links">
+        {% for link in site.profile_links %}
+          <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+        {% endfor %}
+        <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>

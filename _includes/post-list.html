@@ -1,0 +1,22 @@
+<ul class="post-list">
+  {% for post in include.posts limit: include.limit %}
+    <li>
+      <article class="post-preview">
+        <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+        <div>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+          {% if post.excerpt %}
+            <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 220 | escape }}</p>
+          {% endif %}
+          {% if post.tags.size > 0 %}
+            <ul class="tag-list" aria-label="Topics">
+              {% for tag in post.tags %}<li>{{ tag | escape }}</li>{% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+  {% else %}
+    <li><p>New writing will appear here. You can also <a href="{{ '/feed.xml' | relative_url }}">subscribe via RSS</a>.</p></li>
+  {% endfor %}
+</ul>

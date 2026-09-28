@@ -1,19 +1,30 @@
-title: Mark Brown
-email: # add if you want a contact email shown
+title: Mark Brown — Product & Team Leadership
+author: Mark Brown
 description: >-
-  Engineer, evangelist, community cat-herder. Principal PM at Microsoft on Azure Cosmos DB.
-  This is my personal site — opinions are my own.
+  Product leadership, grounded in building. Mark Brown is a Principal PM Manager
+  on Microsoft Azure Cosmos DB, bringing together team leadership, engineering,
+  and developer experience.
 baseurl: ""
 url: "https://markjbrown.com"
 github_username: markjbrown
 twitter_username: markjbrown
 
 theme: minima
-minima:
-  skin: dark
-  social_links:
-    github: markjbrown
-    twitter: markjbrown
+
+profile_links:
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/markjbrown1/
+  - title: GitHub
+    url: https://github.com/markjbrown
+  - title: Speaking
+    url: https://sessionize.com/mark-brown
+
+social:
+  name: Mark Brown
+  links:
+    - https://www.linkedin.com/in/markjbrown1/
+    - https://github.com/markjbrown
+    - https://sessionize.com/mark-brown
 
 plugins:
   - jekyll-feed
@@ -22,8 +33,8 @@ plugins:
 
 header_pages:
   - about.md
-  - blog.md
   - projects.md
+  - blog.md
 
 exclude:
   - README.md

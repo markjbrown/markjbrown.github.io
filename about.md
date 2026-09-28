@@ -2,76 +2,73 @@
 layout: page
 title: About
 permalink: /about/
+eyebrow: About me
+heading: "A product leader with an engineer's perspective."
+description: "Mark Brown's approach to product and team leadership, shaped by engineering, cloud architecture, developer marketing, and community."
+image: /assets/img/mark-head.jpg
 ---
 
-<img src="/assets/img/mark-head.jpg" alt="Mark Brown" style="width:200px;border-radius:8px;float:right;margin:0 0 1rem 1.5rem;" />
+<div class="about-intro">
+  <div class="prose">
+    <p class="lead">I'm Mark Brown, a Principal PM Manager on Microsoft's Azure Cosmos DB team. I bring product and team leadership together with hands-on engineering and a career spent working with developers.</p>
+    <p>I've worked across product management, software engineering, cloud architecture, developer marketing, and community. That breadth shapes how I lead: connect customer needs to product direction, help people do their best work, and bring contributors together across organizational boundaries.</p>
+    <p>Technical depth is part of that leadership, not a separate story. Building samples, reviewing contributions, and explaining difficult architecture choices help me understand where a product works well—and where we need to make it better.</p>
+  </div>
+  <figure class="about-portrait">
+    <img src="{{ '/assets/img/mark-head.jpg' | relative_url }}" alt="Mark Brown smiling outdoors" width="2000" height="1571">
+    <figcaption>Curiosity has been the through line.</figcaption>
+  </figure>
+</div>
 
-I'm Mark Brown — a Principal PM Manager at Microsoft on the
-**Azure Cosmos DB** team. I've been a developer since 1992 and at Microsoft for
-most of the last 25 years across some of the platforms I'm proudest of: Bing
-Maps (back when it was Virtual Earth), IIS / ASP.NET / WebMatrix on the Web
-Platform team, the Azure App Service launch, Azure Networking, and now Cosmos
-DB. The contents of this blog are my own.
+<section class="about-section" aria-labelledby="today-title">
+  <div class="section-label"><p class="eyebrow">Today</p><h2 id="today-title">Making complex platforms useful.</h2></div>
+  <div class="prose">
+    <p>On Cosmos DB, my work centers on helping developers and architects build with distributed data: data modeling and partitioning, resilient applications, vector search, and AI agents. I'm particularly interested in the connections between operational data, analytics, and the developer experience.</p>
+    <p>I work through both people and practical deliverables. I've launched an open-source migration tool and guide its contributors, initiated a multi-agent workshop with cross-organizational participation, and authored samples alongside other contributors. These are tangible examples of how I connect product priorities with tools people can learn from and use.</p>
+    <p>I also speak and teach about distributed systems and cloud development. Developer education and advocacy remain an important part of how I listen, communicate, and lead.</p>
+    <p><a class="text-link" href="{{ '/projects/' | relative_url }}">Explore the work and my role in it <span aria-hidden="true">↗</span></a></p>
+  </div>
+</section>
 
-## What I work on today
+<section class="about-section" aria-labelledby="career-title">
+  <div class="section-label"><p class="eyebrow">The path here</p><h2 id="career-title">Built across disciplines.</h2></div>
+  <div class="career-list">
+    <div class="career-entry">
+      <p class="eyebrow">2016–present · Microsoft</p>
+      <h3>Product management &amp; team leadership</h3>
+      <p>I returned to Microsoft in early 2016, worked on Azure Networking, and then joined Cosmos DB. Today, as a Principal PM Manager, I bring that platform experience to the work of leading people and building for developers.</p>
+    </div>
+    <div class="career-entry">
+      <p class="eyebrow">2014–2016 · Solliance</p>
+      <h3>Cloud architecture, close to customers</h3>
+      <p>As a Cloud Architect at Solliance, I built Azure solutions for customers and returned to hands-on engineering full time. During this period, I was recognized as an Azure MVP.</p>
+    </div>
+    <div class="career-entry">
+      <p class="eyebrow">2000–2014 · Microsoft</p>
+      <h3>Platforms, developer marketing &amp; community</h3>
+      <p>My first Microsoft chapter spanned early mobile and tablet platforms, Virtual Earth and Bing Maps, and the Web Platform team behind IIS, ASP.NET, and WebMatrix. I worked in developer community and evangelism, including as Community Manager for Azure MVPs and Insiders, and in product marketing for Azure Websites and Cache during Azure's early growth.</p>
+    </div>
+    <div class="career-entry">
+      <p class="eyebrow">Since 1992 · Engineering foundations</p>
+      <h3>Learning by solving real problems</h3>
+      <p>I'm a self-taught developer. My first application automated work in a resort's accounting department using a beta of Microsoft Access 1.0. That led to business-process integration, web development, and message-based e-commerce systems—and a lasting interest in how software makes someone's work better.</p>
+    </div>
+  </div>
+</section>
 
-Most of my time is spent helping developers and architects build at cloud
-scale on a distributed NoSQL database. Recent areas of focus:
+<section class="about-section" aria-labelledby="principles-title">
+  <div class="section-label"><p class="eyebrow">Leadership principles</p><h2 id="principles-title">What I come back to.</h2></div>
+  <div class="principles-list">
+    <div><h3>Make the problem clear.</h3><p>I want teams to understand the customer need, the choices in front of us, and why the work matters—not just the next deliverable.</p></div>
+    <div><h3>Create room for others.</h3><p>I value clear direction and shared ownership. Guiding contributors means helping people bring their expertise to the work, not making every decision myself.</p></div>
+    <div><h3>Keep the feedback loop short.</h3><p>I stay close to code, customers, and community. A working example or an honest conversation often reveals what a presentation cannot.</p></div>
+  </div>
+</section>
 
-- **Distributed data modeling and partitioning** — how to take a relational
-  schema and reshape it so it scales horizontally without falling over.
-- **Vector search and AI apps on Cosmos DB** — building chat, retrieval, and
-  multi-agent workloads with Azure OpenAI, Semantic Kernel, and LangChain on
-  top of Cosmos.
-- **Resilience patterns** — active-active replication, Saga transactions,
-  global secondary indexing, and what it actually takes to run zero-downtime
-  workloads on AKS + Cosmos.
-- **Teaching the hard parts** — CAP, PACELC, consistency trade-offs, and the
-  things people get wrong about distributed systems. I speak about these at
-  conferences fairly regularly
-  ([Sessionize](https://sessionize.com/mark-brown)).
-
-You can see most of this work in the open at
-[github.com/markjbrown](https://github.com/markjbrown) and across the
-[AzureCosmosDB](https://github.com/AzureCosmosDB) org.
-
-## How I got here
-
-I'm completely self-taught — I went to school to study finance and hacky-sack.
-I wrote my first application in a beta of Microsoft Access 1.0 while working
-in the accounting department of a golf resort in Scottsdale, AZ, mostly so I
-could do my job for me. That experience was liberating, and I shifted to
-software the next year and devoured everything I could get on engineering. By
-the mid-90s I was writing EAI and business-process automation in VB, Java,
-and C/C++ on Windows and Unix.
-
-Then I moved to So-Cal and built websites in ASP, JSP, and PHP. Not many
-people remember, but in the mid-90s Windows was actually the *cheap* way to
-build websites — Linux didn't really exist yet and Unix servers were
-expensive. I worked at a string of dot-com start-ups doing the stuff behind
-the "Purchase" button: message-based systems that handled e-commerce volume
-and scaled well (they still do). I also built racks of servers myself, some
-mounted on milk crates in closets with portable AC units pointed at them,
-others a little more elegant.
-
-I joined Microsoft for the first time in early 2000. Highlights from that run
-included building apps on the first generations of Pocket PC, Smartphone, and
-Tablet PC; working on Virtual Earth (now Bing Maps); and a long stint on the
-Web Platform team behind IIS, ASP.NET, the Web Application Gallery, Web PI,
-and WebMatrix — including a lot of community work as Microsoft was opening up
-to open source. My last role on that tour was on the original Azure team, both
-as Community Manager for the Azure MVPs/Insiders and as Product Marketing
-Manager for Azure Websites and Cache.
-
-In late 2014 I left Microsoft and joined a small startup called
-[Solliance](http://solliance.net) as a Cloud Architect, building Azure
-solutions for customers. It was a big change after so many years inside, but
-I really love working with customers and being an engineer all day again. I
-also earned recognition as an Azure MVP, which is still very special to me.
-
-I came back to Microsoft in early 2016, and after a stint on Azure Networking
-I landed on Cosmos DB, where I've been since.
-
-When I'm not at work or writing the occasional post here, you can usually find
-me on Twitter / X at
-[@markjbrown](https://twitter.com/markjbrown).
+<section class="connect-note" aria-labelledby="connect-title">
+  <h2 id="connect-title">Continue the conversation.</h2>
+  <p>Find my professional background, public work, and speaking topics.</p>
+  <ul class="inline-links">
+    {% for link in site.profile_links %}<li><a href="{{ link.url }}">{{ link.title | escape }} <span aria-hidden="true">↗</span></a></li>{% endfor %}
+  </ul>
+</section>

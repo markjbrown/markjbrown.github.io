@@ -2,21 +2,16 @@
 layout: page
 title: Blog
 permalink: /blog/
+eyebrow: Writing
+heading: Notes from practice.
+intro: "Ideas and lessons from working with cloud platforms, distributed data, and the people who build with them."
+description: "Mark Brown's writing on cloud development, distributed data, AI, and developer experience."
 ---
 
-<ul style="list-style:none;padding:0;">
-{% for post in site.posts %}
-  <li style="margin-bottom:1.5rem;">
-    <a href="{{ post.url | relative_url }}" style="font-size:1.15rem;font-weight:600;">{{ post.title }}</a>
-    <div style="opacity:0.7;font-size:0.9rem;margin-top:0.15rem;">
-      {{ post.date | date: "%B %-d, %Y" }}
-      {% if post.tags.size > 0 %} · {{ post.tags | join: ", " }}{% endif %}
-    </div>
-    {% if post.excerpt %}
-      <div style="margin-top:0.4rem;">{{ post.excerpt | strip_html | truncate: 220 }}</div>
-    {% endif %}
-  </li>
-{% else %}
-  <li><em>No posts yet — check back soon.</em></li>
-{% endfor %}
-</ul>
+<section aria-labelledby="all-writing-title">
+  <div class="section-heading">
+    <h2 id="all-writing-title">All writing</h2>
+    <a class="text-link" href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS</a>
+  </div>
+  {% include post-list.html posts=site.posts limit=site.posts.size %}
+</section>

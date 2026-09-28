@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Mark Brown, home">
+      <span class="brand-name">Mark Brown<span class="brand-period" aria-hidden="true">.</span></span>
+      <span class="brand-description">Product · People · Platforms</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
+        {% for path in site.header_pages %}
+          {% assign nav_page = site.pages | where: 'path', path | first %}
+          {% if nav_page.title %}
+            <li><a href="{{ nav_page.url | relative_url }}"{% if page.url == nav_page.url %} aria-current="page"{% elsif nav_page.url == '/blog/' and page.layout == 'post' %} aria-current="location"{% endif %}>{{ nav_page.title | escape }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

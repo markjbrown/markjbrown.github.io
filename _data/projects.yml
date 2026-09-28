@@ -1,0 +1,98 @@
+- id: data-migration-tool
+  name: Azure Cosmos DB Data Migration Tool
+  category: Open-source stewardship
+  featured: true
+  home: true
+  summary: A practical path into and out of Cosmos DB, with an extensible tool shaped by open-source contributors.
+  description: Extensible, cross-platform import and export with configurable sources and sinks.
+  value: Gives developers a way to move data between systems and extend the tool for additional formats and sources.
+  role: Launched the open-source tool; lead maintainer guiding contributor development.
+  technologies: [C#, .NET, Cosmos DB, Docker]
+  repo: https://github.com/AzureCosmosDB/data-migration-desktop-tool
+  detail_label: Releases
+  detail_url: https://github.com/AzureCosmosDB/data-migration-desktop-tool/releases
+  evidence_url: https://github.com/AzureCosmosDB/data-migration-desktop-tool/pull/243
+
+- id: banking-multi-agent-workshop
+  name: Banking Multi-Agent Workshop
+  category: Cross-team initiative
+  featured: true
+  home: true
+  summary: A guided way to learn agent collaboration through banking scenarios, exercises, and reference solutions.
+  description: Banking scenarios that teach agent collaboration in LangGraph and Microsoft Agent Framework through exercises and reference solutions.
+  value: Helps developers work through multi-agent patterns in a concrete domain instead of starting with a blank project.
+  role: Initiated the workshop and provided cross-organizational guidance to continuing contributors.
+  technologies: [LangGraph, Microsoft Agent Framework, Cosmos DB, Azure OpenAI]
+  repo: https://github.com/AzureCosmosDB/banking-multi-agent-workshop
+  detail_label: Workshop materials
+  detail_url: https://github.com/AzureCosmosDB/banking-multi-agent-workshop/tree/HOL_v2_AFandLangGraph
+  evidence_url: https://github.com/AzureCosmosDB/banking-multi-agent-workshop/commit/16f5a9928b5c3b8e9b29bf0f49c3ba484a88a188
+
+- id: cosmos-fabric-samples
+  name: Cosmos DB in Fabric Samples
+  category: Connecting product experiences
+  featured: true
+  home: true
+  summary: Working examples that connect operational data with analytics and AI across Cosmos DB and Microsoft Fabric.
+  description: Samples covering CRUD, vector search, Spark, Power BI, reverse ETL, and translytical workflows.
+  value: Gives developers concrete ways to explore how operational data, analytics, and AI fit together.
+  role: Authored many samples and guided fellow contributors.
+  technologies: [Microsoft Fabric, Cosmos DB, Python, Power BI]
+  repo: https://github.com/AzureCosmosDB/cosmos-fabric-samples
+  detail_label: Reverse ETL sample
+  detail_url: https://github.com/AzureCosmosDB/cosmos-fabric-samples/tree/main/reverse-etl
+  evidence_url: https://github.com/AzureCosmosDB/cosmos-fabric-samples/commit/22817cdb5075b90291f56f0d5c6ebfe610f44517
+
+- id: travel-multi-agent-workshop
+  name: Travel Multi-Agent Workshop
+  category: Extending a shared platform
+  featured: true
+  home: false
+  description: A build-along travel assistant with persistent agent memory and optional Fabric modules for observability, analytics, optimization, and reverse ETL.
+  value: Lets developers explore how agent memory and analytical feedback can inform governed, reversible actions.
+  role: Drove the agent analytics and optimization expansion, connecting persistent memory with Fabric insights and governed, reversible actions.
+  note: My contribution focuses on the analytics and optimization expansion. These are bounded demonstrations, not measured production outcomes.
+  technologies: [LangGraph, Azure AI Foundry, Cosmos DB, Microsoft Fabric]
+  repo: https://github.com/AzureCosmosDB/travel-multi-agent-workshop
+  detail_label: Contribution
+  detail_url: https://github.com/AzureCosmosDB/travel-multi-agent-workshop/pull/74
+  evidence_url: https://github.com/AzureCosmosDB/travel-multi-agent-workshop/pull/74
+
+- id: cosmos-db-design-patterns
+  name: Cosmos DB Design Patterns
+  category: Developer learning
+  featured: true
+  home: false
+  description: Runnable NoSQL data-modeling and architecture examples covering concurrency, partitioning, event-driven designs, and vector search.
+  value: Helps developers examine specific design choices in working code, including Patch API behavior and ETag-based concurrency.
+  role: Major contributor, expanding practical examples and improving the developer learning experience.
+  technologies: [C#, .NET, Cosmos DB, Blazor]
+  repo: https://github.com/Azure-Samples/cosmos-db-design-patterns
+  detail_label: Patch API sample
+  detail_url: https://github.com/Azure-Samples/cosmos-db-design-patterns/tree/main/patch-api
+  evidence_url: https://github.com/Azure-Samples/cosmos-db-design-patterns/pull/101
+
+- id: cosmos-webapp-network-sample
+  name: Cosmos Web App Network Sample
+  category: Focused deployment example
+  featured: false
+  home: false
+  description: A public-facing web app connected to Cosmos DB through private networking and managed identity.
+  value: Helps developers compare Private Link with service-endpoint and VNet-rule connectivity in a deployable example.
+  role: Authored the deployment sample.
+  technologies: [Python, FastAPI, Bicep, Managed identity]
+  repo: https://github.com/markjbrown/cosmos-webapp-network-sample
+  evidence_url: https://github.com/markjbrown/cosmos-webapp-network-sample/commit/1358e028c0791cce300ff42cc4957ebb43463091
+
+- id: cosmos-global-distribution-demos
+  name: Cosmos Global Distribution Demos
+  category: Architecture learning · Earlier work
+  featured: false
+  home: false
+  description: Hands-on demonstrations of consistency, latency, replication, conflict resolution, and failover trade-offs.
+  value: Makes distributed-systems behavior easier to reason about through concrete experiments.
+  role: Primary contributor to hands-on distributed-systems demonstrations.
+  note: Older architecture-learning material targeting earlier .NET versions—not a current production starter.
+  technologies: [C#, Cosmos DB, ARM]
+  repo: https://github.com/markjbrown/cosmos-global-distribution-demos
+  evidence_url: https://github.com/markjbrown/cosmos-global-distribution-demos/commit/cff32ed90fe7dfab4144fdb7ed604051253b43bb

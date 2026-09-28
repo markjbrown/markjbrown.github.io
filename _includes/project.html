@@ -1,0 +1,29 @@
+{% assign project = include.project %}
+<article id="{{ project.id }}" class="project{% if include.compact %} project-compact{% endif %}" aria-labelledby="{{ project.id }}-title">
+  <header class="project-header">
+    <p class="eyebrow">{{ project.category | escape }}</p>
+    <h3 id="{{ project.id }}-title">{{ project.name | escape }}</h3>
+  </header>
+  <div class="project-body">
+    <div class="project-purpose">
+      <p>{{ project.description | escape }}</p>
+      <p class="project-value">{{ project.value | escape }}</p>
+    </div>
+    <div class="project-role">
+      <h4>My role</h4>
+      <p>{{ project.role | escape }}</p>
+    </div>
+  </div>
+  {% if project.note %}<p class="project-note">{{ project.note | escape }}</p>{% endif %}
+  <footer class="project-footer">
+    <ul class="tag-list" aria-label="Technologies">
+      {% for technology in project.technologies %}<li>{{ technology | escape }}</li>{% endfor %}
+    </ul>
+    <ul class="project-links">
+      <li><a href="{{ project.repo }}" aria-label="{{ project.name | escape }} repository">Repository <span aria-hidden="true">↗</span></a></li>
+      {% if project.detail_url %}
+        <li><a href="{{ project.detail_url }}" aria-label="{{ project.detail_label | escape }}: {{ project.name | escape }}">{{ project.detail_label | escape }} <span aria-hidden="true">↗</span></a></li>
+      {% endif %}
+    </ul>
+  </footer>
+</article>
