@@ -12,6 +12,13 @@
   detail_label: Releases
   detail_url: https://github.com/AzureCosmosDB/data-migration-desktop-tool/releases
   evidence_url: https://github.com/AzureCosmosDB/data-migration-desktop-tool/pull/243
+  image:
+    src: /assets/img/projects/data-migration-architecture.png
+    width: 225
+    height: 371
+    alt: JSON, MongoDB, and SQL Server extensions implement shared interfaces and are loaded by the migration tool's core composition container.
+    caption: Extension-based architecture for the migration tool.
+    source_url: https://github.com/AzureCosmosDB/data-migration-desktop-tool/blob/main/media/application_architecture.png
 
 - id: banking-multi-agent-workshop
   name: Banking Multi-Agent Workshop
@@ -27,6 +34,13 @@
   detail_label: Workshop materials
   detail_url: https://github.com/AzureCosmosDB/banking-multi-agent-workshop/tree/HOL_v2_AFandLangGraph
   evidence_url: https://github.com/AzureCosmosDB/banking-multi-agent-workshop/commit/16f5a9928b5c3b8e9b29bf0f49c3ba484a88a188
+  image:
+    src: /assets/img/projects/banking-multi-agent.png
+    width: 2079
+    height: 1166
+    alt: Banking workshop architecture connects an Angular app on App Service to Semantic Kernel and LangGraph, Cosmos DB, Azure OpenAI, deployment, and observability services.
+    caption: Workshop architecture from the LangGraph branch.
+    source_url: https://github.com/AzureCosmosDB/banking-multi-agent-workshop/blob/WorkShop_v2_PythonLangGraph/01_exercises/media/Multi-agent.png
 
 - id: cosmos-fabric-samples
   name: Cosmos DB in Fabric Samples
@@ -42,6 +56,13 @@
   detail_label: Reverse ETL sample
   detail_url: https://github.com/AzureCosmosDB/cosmos-fabric-samples/tree/main/reverse-etl
   evidence_url: https://github.com/AzureCosmosDB/cosmos-fabric-samples/commit/22817cdb5075b90291f56f0d5c6ebfe610f44517
+  image:
+    src: /assets/img/projects/fabric-reverse-etl.png
+    width: 767
+    height: 661
+    alt: Reverse ETL semantic-search demo shows a natural-language customer query, similar customer result cards, and demonstration metrics.
+    caption: Reverse ETL semantic-search demo with example customer results.
+    source_url: https://github.com/AzureCosmosDB/cosmos-fabric-samples/blob/main/reverse-etl/webapp/static/media/webux.png
 
 - id: travel-multi-agent-workshop
   name: Travel Multi-Agent Workshop
@@ -57,6 +78,13 @@
   detail_label: Contribution
   detail_url: https://github.com/AzureCosmosDB/travel-multi-agent-workshop/pull/74
   evidence_url: https://github.com/AzureCosmosDB/travel-multi-agent-workshop/pull/74
+  image:
+    src: /assets/img/projects/travel-analytics-overview.png
+    width: 1440
+    height: 983
+    alt: Agent Optimization Dashboard overview displays captured-run metrics and charts comparing models and conversation turns.
+    caption: Agent analytics and optimization dashboard, showing a demonstration run.
+    source_url: https://github.com/AzureCosmosDB/travel-multi-agent-workshop/blob/main/analytics/media/portal/portal-01-overview.png
 
 - id: cosmos-db-design-patterns
   name: Cosmos DB Design Patterns
@@ -64,13 +92,23 @@
   featured: true
   home: false
   description: Runnable NoSQL data-modeling and architecture examples covering concurrency, partitioning, event-driven designs, and vector search.
-  value: Helps developers examine specific design choices in working code, including Patch API behavior and ETag-based concurrency.
+  value: Helps developers explore coordination and failure scenarios in working code, making distributed-systems design choices easier to understand.
   role: Major contributor, expanding practical examples and improving the developer learning experience.
+  sample_highlight:
+    heading: "In focus: Distributed lock"
+    description: An interactive playground makes lock contention, lease renewal, crash recovery, and fencing-token protection visible through competing workers backed by Cosmos DB.
   technologies: [C#, .NET, Cosmos DB, Blazor]
   repo: https://github.com/Azure-Samples/cosmos-db-design-patterns
-  detail_label: Patch API sample
-  detail_url: https://github.com/Azure-Samples/cosmos-db-design-patterns/tree/main/patch-api
+  detail_label: Distributed lock example
+  detail_url: https://github.com/Azure-Samples/cosmos-db-design-patterns/tree/main/distributed-lock
   evidence_url: https://github.com/Azure-Samples/cosmos-db-design-patterns/pull/101
+  image:
+    src: /assets/img/projects/distributed-lock.png
+    width: 1280
+    height: 1299
+    alt: Distributed-lock playground shows competing workers, lock-holder and renewal controls, protected resources, fencing tokens, and an event timeline.
+    caption: Distributed-lock playground with competing workers and a live event timeline.
+    source_url: https://github.com/Azure-Samples/cosmos-db-design-patterns/blob/main/distributed-lock/media/distributed-lock-web.png
 
 - id: cosmos-webapp-network-sample
   name: Cosmos Web App Network Sample

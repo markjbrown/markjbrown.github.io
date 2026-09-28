@@ -4,10 +4,20 @@
     <p class="eyebrow">{{ project.category | escape }}</p>
     <h3 id="{{ project.id }}-title">{{ project.name | escape }}</h3>
   </header>
+  {% if project.image %}
+  <div class="project-content-with-media">
+    <div class="project-narrative">
+  {% endif %}
   <div class="project-body">
     <div class="project-purpose">
       <p>{{ project.description | escape }}</p>
       <p class="project-value">{{ project.value | escape }}</p>
+      {% if project.sample_highlight %}
+      <div class="project-highlight">
+        <h4>{{ project.sample_highlight.heading | escape }}</h4>
+        <p>{{ project.sample_highlight.description | escape }}</p>
+      </div>
+      {% endif %}
     </div>
     <div class="project-role">
       <h4>My role</h4>
@@ -15,6 +25,20 @@
     </div>
   </div>
   {% if project.note %}<p class="project-note">{{ project.note | escape }}</p>{% endif %}
+  {% if project.image %}
+    </div>
+    <figure class="project-media">
+      <a class="project-image-link" href="{{ project.image.src | relative_url | escape }}" aria-label="View full-size image: {{ project.name | escape }}">
+        <img src="{{ project.image.src | relative_url | escape }}" width="{{ project.image.width | escape }}" height="{{ project.image.height | escape }}" alt="{{ project.image.alt | escape }}" loading="lazy" decoding="async">
+        <span>View full-size image</span>
+      </a>
+      <figcaption>
+        {{ project.image.caption | escape }}
+        <a href="{{ project.image.source_url | escape }}" aria-label="Image source: {{ project.name | escape }}">Image source <span aria-hidden="true">↗</span></a>
+      </figcaption>
+    </figure>
+  </div>
+  {% endif %}
   <footer class="project-footer">
     <ul class="tag-list" aria-label="Technologies">
       {% for technology in project.technologies %}<li>{{ technology | escape }}</li>{% endfor %}

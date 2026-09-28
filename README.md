@@ -9,13 +9,26 @@ is required. Content is rendered statically; Speaking links directly to Sessioni
 
 ## Editing content
 
-- `index.md` and `about.md` contain the introduction and career narrative.
-- `_data/projects.yml` is the source of truth for the portfolio and home-page
-  selected work. Set `featured` to group projects and `home` to select home-page
-  entries. Preserve the `id` when editing an entry so its portfolio link stays
+- `index.md` owns the career-led hero, selected impact, and career breadth;
+  `about.md` provides the expanded career background.
+- `_layouts/home.html` places compact supporting project links and recent writing
+  after the career content.
+- `_data/projects.yml` is the source of truth for the portfolio. Set `featured`
+  to group projects and `home` to select supporting home-page links.
+  Preserve the `id` when editing an entry so its portfolio link stays
   stable. Each entry documents the purpose, developer value, my role, technology,
   repository, and public evidence; role claims should remain specific and
   attributable.
+  Optional `image` metadata adds a portfolio figure: set `src` to the local asset
+  path, `width` and `height` to its intrinsic pixel dimensions, `alt` to a
+  meaningful description, `caption` to contextual text, and `source_url` to the
+  original public source for attribution. Images sit beside the narrative on
+  wide screens and stack below it on smaller screens, preserving their aspect
+  ratio within bounded dimensions without cropping or enlarging small originals.
+  The image and its **View full-size image** link open the local original;
+  internal asset URLs use `relative_url`. Home-page selected work stays text-only.
+  Optional `sample_highlight.heading` and `sample_highlight.description` call out
+  an example within an existing project without changing its role attribution.
 - `projects.md` presents the curated portfolio at `/projects/`; the navigation
   label is **Portfolio**. There are no live GitHub API requests.
 - `blog.md` lists posts from `_posts/`. Post dates, tags, and content are rendered
