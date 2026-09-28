@@ -35,6 +35,7 @@ header_pages:
   - about.md
   - projects.md
   - blog.md
+  - speaking.md
 
 exclude:
   - README.md
