@@ -15,10 +15,8 @@ image: /assets/img/mark-head.jpg
       <a class="button-link" href="{{ '/about/' | relative_url }}">More about me <span aria-hidden="true">↗</span></a>
       <a class="text-link" href="{{ '/projects/' | relative_url }}">See my work <span aria-hidden="true">↗</span></a>
     </div>
-    <p class="hero-detail">
-      Looking for conference talks and recordings? Visit my
-      <a href="{{ '/speaking/' | relative_url }}">speaking page</a> for upcoming and past sessions from Sessionize.
-    </p>
+    {% assign speaking_link = site.profile_links | where: 'title', 'Speaking' | first %}
+    <p class="hero-detail">For conference talks and speaking information, visit my <a href="{{ speaking_link.url | escape }}">Sessionize profile</a>.</p>
   </div>
   <figure class="hero-portrait">
     <img src="{{ '/assets/img/mark-head.jpg' | relative_url }}" alt="Mark Brown smiling outdoors" width="2000" height="1571" fetchpriority="high">

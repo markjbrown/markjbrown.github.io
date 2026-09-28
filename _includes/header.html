@@ -13,6 +13,10 @@
             <li><a href="{{ nav_page.url | relative_url }}"{% if page.url == nav_page.url %} aria-current="page"{% elsif nav_page.url == '/blog/' and page.layout == 'post' %} aria-current="location"{% endif %}>{{ nav_page.title | escape }}</a></li>
           {% endif %}
         {% endfor %}
+        {% assign speaking_link = site.profile_links | where: 'title', 'Speaking' | first %}
+        {% if speaking_link %}
+          <li><a href="{{ speaking_link.url | escape }}">{{ speaking_link.title | escape }}</a></li>
+        {% endif %}
       </ul>
     </nav>
   </div>

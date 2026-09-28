@@ -5,8 +5,7 @@ Personal site for Mark Brown, hosted on GitHub Pages.
 Built with [Jekyll](https://jekyllrb.com/) + the
 [Minima](https://github.com/jekyll/minima) theme dependency. Local layouts and a
 shared stylesheet provide the site's editorial design; no frontend framework
-is required. Core content is rendered statically, with optional live session
-data on the Speaking page.
+is required. Content is rendered statically; Speaking links directly to Sessionize.
 
 ## Editing content
 
@@ -21,8 +20,9 @@ data on the Speaking page.
   label is **Portfolio**. There are no live GitHub API requests.
 - `blog.md` lists posts from `_posts/`. Post dates, tags, and content are rendered
   by the shared post layout.
-- `speaking.md` preserves the Sessionize session listing and profile fallback at
-  `/speaking/`, linked from the main navigation and home page.
+- Speaking links in the main navigation, home page, and footer use the Sessionize
+  profile in `_config.yml` under `profile_links`. There is no local Speaking page
+  or live session feed.
 - `_layouts/`, `_includes/`, and `assets/css/site.css` control presentation.
   Profile links and site metadata live in `_config.yml`.
 
