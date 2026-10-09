@@ -6,7 +6,7 @@
   summary: A practical path into and out of Cosmos DB, with an extensible tool shaped by open-source contributors.
   description: Extensible, cross-platform import and export with configurable sources and sinks.
   value: Gives developers a way to move data between systems and extend the tool for additional formats and sources.
-  role: Launched the open-source tool; lead maintainer guiding contributor development.
+  role: When my team was going to deprecate an engineering owned data migration tool, I worked with a group of community members to create a new one and open source it so others could contribute as well. I launched the open-source tool and am the lead maintainer guiding contributor development.
   technologies: [C#, .NET, Cosmos DB, Docker]
   repo: https://github.com/AzureCosmosDB/data-migration-desktop-tool
   detail_label: Releases
