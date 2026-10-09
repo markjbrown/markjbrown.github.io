@@ -71,8 +71,7 @@
   home: false
   description: A build-along travel assistant with persistent agent memory and optional Fabric modules for observability, analytics, optimization, and reverse ETL.
   value: Lets developers explore how agent memory and analytical feedback can inform governed, reversible actions.
-  role: Drove the agent analytics and optimization expansion, connecting persistent memory with Fabric insights and governed, reversible actions.
-  note: Created the workshop/sample experience and all of the infrastructure deployment. Also contributed all of the analytics and optimization expansion.
+  role: Created the workshop/sample experience and all of the infrastructure deployment. Drove the agent analytics and optimization expansion, connecting persistent memory with Fabric insights and governed, reversible actions.
   technologies: [LangGraph, Azure AI Foundry, Cosmos DB, Microsoft Fabric]
   repo: https://github.com/AzureCosmosDB/travel-multi-agent-workshop
   detail_label: Contribution
