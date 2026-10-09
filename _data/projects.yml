@@ -28,7 +28,7 @@
   summary: A guided way to learn agent collaboration through banking scenarios, exercises, and reference solutions.
   description: Banking scenarios that teach agent collaboration in LangGraph and Microsoft Agent Framework through exercises and reference solutions.
   value: Helps developers work through multi-agent patterns in a concrete domain instead of starting with a blank project.
-  role: Initiated the workshop and provided cross-organizational guidance to continuing contributors.
+  role: Initiated the workshop, created all of the deployment infrastructure, heavily contributed to the technical content and provided cross-organizational guidance to continuing contributors.
   technologies: [LangGraph, Microsoft Agent Framework, Cosmos DB, Azure OpenAI]
   repo: https://github.com/AzureCosmosDB/banking-multi-agent-workshop
   detail_label: Workshop materials
@@ -38,7 +38,7 @@
     src: /assets/img/projects/banking-multi-agent.png
     width: 2079
     height: 1166
-    alt: Banking workshop architecture connects an Angular app on App Service to Semantic Kernel and LangGraph, Cosmos DB, Azure OpenAI, deployment, and observability services.
+    alt: Banking workshop architecture connects an Angular app on App Service to Agent Framework and LangGraph, Cosmos DB, Azure OpenAI, deployment, and observability services.
     caption: Workshop architecture from the LangGraph branch.
     source_url: https://github.com/AzureCosmosDB/banking-multi-agent-workshop/blob/WorkShop_v2_PythonLangGraph/01_exercises/media/Multi-agent.png
 
@@ -50,7 +50,7 @@
   summary: Working examples that connect operational data with analytics and AI across Cosmos DB and Microsoft Fabric.
   description: Samples covering CRUD, vector search, Spark, Power BI, reverse ETL, and translytical workflows.
   value: Gives developers concrete ways to explore how operational data, analytics, and AI fit together.
-  role: Authored many samples and guided fellow contributors.
+  role: Created the samples gallery, authored most of the samples and guided fellow contributors.
   technologies: [Microsoft Fabric, Cosmos DB, Python, Power BI]
   repo: https://github.com/AzureCosmosDB/cosmos-fabric-samples
   detail_label: Reverse ETL sample
@@ -72,7 +72,7 @@
   description: A build-along travel assistant with persistent agent memory and optional Fabric modules for observability, analytics, optimization, and reverse ETL.
   value: Lets developers explore how agent memory and analytical feedback can inform governed, reversible actions.
   role: Drove the agent analytics and optimization expansion, connecting persistent memory with Fabric insights and governed, reversible actions.
-  note: My contribution focuses on the analytics and optimization expansion. These are bounded demonstrations, not measured production outcomes.
+  note: Created the workshop/sample experience and all of the infrastructure deployment. Also contributed all of the analytics and optimization expansion.
   technologies: [LangGraph, Azure AI Foundry, Cosmos DB, Microsoft Fabric]
   repo: https://github.com/AzureCosmosDB/travel-multi-agent-workshop
   detail_label: Contribution
@@ -93,7 +93,7 @@
   home: false
   description: Runnable NoSQL data-modeling and architecture examples covering concurrency, partitioning, event-driven designs, and vector search.
   value: Helps developers explore coordination and failure scenarios in working code, making distributed-systems design choices easier to understand.
-  role: Major contributor, expanding practical examples and improving the developer learning experience.
+  role: Initiated this project and was a major contributor, expanding practical examples and improving the developer learning experience.
   sample_highlight:
     heading: "In focus: Distributed lock"
     description: An interactive playground makes lock contention, lease renewal, crash recovery, and fencing-token protection visible through competing workers backed by Cosmos DB.
