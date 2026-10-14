@@ -1,3 +1,29 @@
+- id: coda
+  name: CODA - Cosmos Observability and Diagnostic Agent
+  category: Customer-focused diagnostics
+  featured: true
+  home: true
+  summary: Making scale-out database performance and cost easier to understand, with evidence-backed diagnostics and practical recommendations.
+  description: A local, read-only diagnostic app that turns Cosmos DB for NoSQL configuration, metrics, and optional query logs into recommendations for throughput, partitioning, query efficiency, and cost.
+  value: Helps customers understand why their applications are slow or expensive, distinguish capacity shortages from hot partitions and inefficient queries, and evaluate targeted changes instead of simply adding throughput. Estimates savings when usable cost evidence is available.
+  role: Created CODA because customers often struggle to understand and optimize the performance and cost of applications built on scale-out databases.
+  sample_highlight:
+    heading: How it works
+    description: A shared Python engine runs deterministic checks, correlates related findings, and preserves the supporting evidence while flagging checks it could not complete. Customers use a local browser UI or connect an AI assistant through MCP; the diagnostic engine itself requires no AI model.
+  note: "Preview release. Recommendations depend on available telemetry; incomplete checks are not a clean bill of health. CODA never modifies resources or reads application documents."
+  technologies: [Python, FastAPI, Cosmos DB, Azure Monitor, MCP]
+  repo: https://github.com/AzureCosmosDB/coda
+  detail_label: How CODA works
+  detail_url: https://github.com/AzureCosmosDB/coda/blob/main/docs/architecture.md
+  evidence_url: https://github.com/AzureCosmosDB/coda/commit/fb40321b467bf966d3ca5546077b27f4d6a428e2
+  image:
+    src: /assets/img/projects/coda-web.png
+    width: 2534
+    height: 1259
+    alt: CODA browser UI shows a demo Cosmos DB account with diagnostic findings, severity levels, estimated savings, and recommendations for idle throughput and write-heavy throttling.
+    caption: Example account analysis with demo resource names, recommendations, and workload-dependent savings estimates.
+    source_url: https://github.com/AzureCosmosDB/coda/blob/main/docs/images/coda-web.png
+
 - id: data-migration-tool
   name: Azure Cosmos DB Data Migration Tool
   category: Open-source stewardship
@@ -14,11 +40,11 @@
   evidence_url: https://github.com/AzureCosmosDB/data-migration-desktop-tool/pull/243
   image:
     src: /assets/img/projects/data-migration-architecture.png
-    width: 225
-    height: 371
-    alt: JSON, MongoDB, and SQL Server extensions implement shared interfaces and are loaded by the migration tool's core composition container.
-    caption: Extension-based architecture for the migration tool.
-    source_url: https://github.com/AzureCosmosDB/data-migration-desktop-tool/blob/main/media/application_architecture.png
+    width: 1600
+    height: 1574
+    alt: The command-line core loads source and sink extensions through MEF. Data streams from source to sink as IDataItem records. Extensions implement shared interfaces used by the core.
+    caption: A modular migration engine with MEF plug-ins, shared contracts, and asynchronous source-to-sink streaming.
+    source_url: https://github.com/AzureCosmosDB/data-migration-desktop-tool/blob/ce916950d1396dff37c0dfe958eb3ab8d6d04dd4/media/application_architecture.png
 
 - id: banking-multi-agent-workshop
   name: Banking Multi-Agent Workshop
