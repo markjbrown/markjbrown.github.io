@@ -6,7 +6,7 @@
   summary: Making scale-out database performance and cost easier to understand, with evidence-backed diagnostics and practical recommendations.
   description: A local, read-only diagnostic app that turns Cosmos DB for NoSQL configuration, metrics, and optional query logs into recommendations for throughput, partitioning, query efficiency, and cost.
   value: Helps customers understand why their applications are slow or expensive, distinguish capacity shortages from hot partitions and inefficient queries, and evaluate targeted changes instead of simply adding throughput. Estimates savings when usable cost evidence is available.
-  role: Created CODA because customers often struggle to understand and optimize the performance and cost of applications built on scale-out databases.
+  role: Created CODA because customers often struggle to understand and optimize the performance and cost of applications built on scale-out databases. This is a prototype to help shape future developments for service-provided capabilities.
   sample_highlight:
     heading: How it works
     description: A shared Python engine runs deterministic checks, correlates related findings, and preserves the supporting evidence while flagging checks it could not complete. Customers use a local browser UI or connect an AI assistant through MCP; the diagnostic engine itself requires no AI model.
