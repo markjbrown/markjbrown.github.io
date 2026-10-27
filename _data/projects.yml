@@ -6,7 +6,7 @@
   summary: Making scale-out database performance and cost easier to understand, with evidence-backed diagnostics and practical recommendations.
   description: A local, read-only diagnostic app that turns Cosmos DB for NoSQL configuration, metrics, and optional query logs into recommendations for throughput, partitioning, query efficiency, and cost.
   value: Helps customers understand why their applications are slow or expensive, distinguish capacity shortages from hot partitions and inefficient queries, and evaluate targeted changes instead of simply adding throughput. Estimates savings when usable cost evidence is available.
-  role: Created CODA because customers often struggle to understand and optimize the performance and cost of applications built on scale-out databases. This is a prototype to help shape future developments for service-provided capabilities.
+  role: Created CODA because customers often struggle to understand and optimize the performance and cost of applications built on scale-out databases. Its diagnostic capabilities are now shipping to customers in the Cosmos DB VS Code Extension, with broader adoption planned across additional customer experiences.
   sample_highlight:
     heading: How it works
     description: A shared Python engine runs deterministic checks, correlates related findings, and preserves the supporting evidence while flagging checks it could not complete. Customers use a local browser UI or connect an AI assistant through MCP; the diagnostic engine itself requires no AI model.
@@ -23,6 +23,31 @@
     alt: CODA browser UI shows a demo Cosmos DB account with diagnostic findings, severity levels, estimated savings, and recommendations for idle throughput and write-heavy throttling.
     caption: Example account analysis with demo resource names, recommendations, and workload-dependent savings estimates.
     source_url: https://github.com/AzureCosmosDB/coda/blob/main/docs/images/coda-web.png
+
+- id: documentdb-local-to-multicloud
+  name: "DocumentDB: From Localhost to Multi-Cloud"
+  category: PostgreSQL on Kubernetes
+  featured: true
+  home: false
+  summary: PostgreSQL on Kubernetes, with DocumentDB, cross-cloud replication, and hands-on failover between Azure and AWS.
+  description: A hands-on demo of open-source DocumentDB, powered by PostgreSQL on Kubernetes. The DocumentDB operator builds on CloudNativePG to manage primary and replica clusters across Azure Kubernetes Service (AKS) and Amazon Elastic Kubernetes Service (EKS).
+  value: Makes database resilience visible through a live travel-booking workload, replication-lag monitoring, and cross-cloud failover. Developers can start locally with Docker and HNSW vector search, then explore how the database behaves across clouds.
+  role: Built the demo experience, including the live monitor, booking workload generator, and Grafana observability. Adapted the upstream DocumentDB multi-cloud deployment for an AKS-and-EKS walkthrough.
+  sample_highlight:
+    heading: "In focus: Cross-cloud failover"
+    description: PostgreSQL write-ahead logs (WAL) stream between clouds over an Istio mesh with mutual TLS. The monitor lets you promote a replica to primary with one click and watch writes move to the new primary. Grafana dashboards expose replication and workload metrics, while replica rebuild controls demonstrate recovery.
+  note: Built for hands-on learning and live demonstrations; production use requires additional hardening.
+  technologies: [PostgreSQL, Kubernetes, DocumentDB, CloudNativePG, AKS, EKS, Istio, Grafana]
+  repo: https://github.com/AzureCosmosDB/documentdb-local-to-multicloud
+  detail_label: Multi-cloud architecture
+  detail_url: https://github.com/AzureCosmosDB/documentdb-local-to-multicloud/tree/main/infra/multi-cloud
+  evidence_url: https://github.com/AzureCosmosDB/documentdb-local-to-multicloud/commit/0232ff46361f130fafc3b8e76ee97bbba823edcc
+  image:
+    src: /assets/img/projects/documentdb-topology.png
+    width: 1536
+    height: 1000
+    alt: DocumentDB Multi-Cloud Monitor shows an Azure primary, Azure and AWS replicas, replication-lag metrics, and controls to promote or rebuild replicas.
+    caption: Multi-cloud topology with primary and replica health, WAL replication lag, and one-click failover and recovery controls.
 
 - id: data-migration-tool
   name: Azure Cosmos DB Data Migration Tool

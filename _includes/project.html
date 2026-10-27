@@ -34,7 +34,9 @@
       </a>
       <figcaption>
         {{ project.image.caption | escape }}
+        {% if project.image.source_url %}
         <a href="{{ project.image.source_url | escape }}" aria-label="Image source: {{ project.name | escape }}">Image source <span aria-hidden="true">↗</span></a>
+        {% endif %}
       </figcaption>
     </figure>
   </div>

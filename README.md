@@ -21,8 +21,9 @@ is required. Content is rendered statically; Speaking links directly to Sessioni
   attributable.
   Optional `image` metadata adds a portfolio figure: set `src` to the local asset
   path, `width` and `height` to its intrinsic pixel dimensions, `alt` to a
-  meaningful description, `caption` to contextual text, and `source_url` to the
-  original public source for attribution. Images sit beside the narrative on
+  meaningful description, and `caption` to contextual text. Set the optional
+  `source_url` to the original public source for attribution; omit it for
+  supplied screenshots without a public source. Images sit beside the narrative on
   wide screens and stack below it on smaller screens, preserving their aspect
   ratio within bounded dimensions without cropping or enlarging small originals.
   The image and its **View full-size image** link open the local original;
