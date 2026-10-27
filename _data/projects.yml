@@ -44,7 +44,7 @@
   evidence_url: https://github.com/AzureCosmosDB/documentdb-local-to-multicloud/commit/0232ff46361f130fafc3b8e76ee97bbba823edcc
   image:
     src: /assets/img/projects/documentdb-topology.png
-    width: 1440
+    width: 1536
     height: 1000
     alt: DocumentDB Multi-Cloud Monitor shows an Azure primary, Azure and AWS replicas, replication-lag metrics, and controls to promote or rebuild replicas.
     caption: Multi-cloud topology with primary and replica health, WAL replication lag, and one-click failover and recovery controls.
